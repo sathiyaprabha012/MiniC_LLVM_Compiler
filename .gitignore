@@ -1,0 +1,13 @@
+build/
+bin/
+
+lexer/lex.yy.c
+parser/parser.tab.c
+parser/parser.tab.h
+
+tokens.txt
+ast.txt
+symbol_table.txt
+tac.txt
+optimized_tac.txt
+output.ll

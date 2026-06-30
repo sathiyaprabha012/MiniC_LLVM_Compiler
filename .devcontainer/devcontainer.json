@@ -1,0 +1,16 @@
+{
+  "name": "MiniC-LLVM-Compiler",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {}
+  },
+  "postCreateCommand": "sudo apt update && sudo apt install -y build-essential flex bison llvm clang valgrind && gcc --version && flex --version && bison --version && llvm-as --version",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "llvm-vs-code-extensions.vscode-clangd"
+      ]
+    }
+  }
+}
